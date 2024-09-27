@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIV 13</title>
+</head>
+<body>
+
+    <script>
+        function embaralharPalavra(palavra) {
+            return palavra.toUpperCase().split('').sort(() => Math.random() - 0.5).join('');
+        }
+
+        const palavraEmbaralhada = embaralharPalavra("calopsita");
+        alert(palavraEmbaralhada);
+    </script>
+
+</body>
+</html>
